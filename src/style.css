@@ -1,1 +1,46 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card .top-left,
+.card .bottom-right {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card .top-left {
+  top: 5px;
+  left: 5px;
+}
+
+.card .bottom-right {
+  bottom: 5px;
+  right: 5px;
+  transform: rotate(180deg);
+}
