@@ -30,6 +30,16 @@ window.onload = function() {
   document.querySelector(".top-left").textContent = randomSuit;
   document.querySelector(".center").textContent = randomNumber;
   document.querySelector(".bottom-right").textContent = randomSuit;
+
+  if (randomSuit === "♥" || randomSuit === "♦") {
+    document.querySelector(".top-left").style.color = "red";
+    document.querySelector(".center").style.color = "red";
+    document.querySelector(".bottom-right").style.color = "red";
+  } else {
+    document.querySelector(".top-left").style.color = "black";
+    document.querySelector(".center").style.color = "black";
+    document.querySelector(".bottom-right").style.color = "black";
+  }
 };
 
 document.getElementById("newCardButton").addEventListener("click", function() {
@@ -56,4 +66,14 @@ document.getElementById("newCardButton").addEventListener("click", function() {
   document.querySelector(".top-left").textContent = randomSuit;
   document.querySelector(".center").textContent = randomNumber;
   document.querySelector(".bottom-right").textContent = randomSuit;
+
+  if (randomSuit === "♥" || randomSuit === "♦") {
+    document.querySelector(".top-left").style.color = "red";
+    document.querySelector(".center").style.color = "red";
+    document.querySelector(".bottom-right").style.color = "red";
+  } else {
+    document.querySelector(".top-left").style.color = "black";
+    document.querySelector(".center").style.color = "black";
+    document.querySelector(".bottom-right").style.color = "black";
+  }
 });
